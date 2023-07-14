@@ -30,7 +30,7 @@ module "instance" {
   public_subnet_id   = module.vpc.public_subnet
   private_subnet_id  = module.vpc.private_subnet
   sg_id              = module.securitygroup.sg_data
-  key_name     = module.keypair.key_name
+  key_name           = module.keypair.key_name
   availability_zones = var.availability_zones
   private_key        = module.keypair.privatekey
 }
